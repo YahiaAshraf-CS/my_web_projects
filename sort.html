@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sorting algorithms</title>
+    <link rel="stylesheet" href="sort.css">
+</head>
+<body>
+    
+    <div class="big_box">
+        <center><h1 class="author">By Yehia Ashraf Aly</h1></center>
+        <center><h1>Sorting Algorithms</h1></center>
+        <div class="controls">
+            <div class="algorithm-selection">
+                <label><input type="radio" name="algorithm" value="bubble">bubble sort</label>
+                <label><input type="radio" name="algorithm" value="quick">quick sort</label>
+                <label><input type="radio" name="algorithm" value="insertion" checked>insertion sort</label>
+                <label><input type="radio" name="algorithm" value="merge">merge sort</label>
+                <label><input type="radio" name="algorithm" value="selection">selection sort</label>
+            </div>
+            <div class="buttons">
+                <button id="generateBtn">generate array</button>
+                <button id="sortBtn">start sorting</button>
+                <button id="stop">stop sorting</button>
+                <button id="reset">reset array</button>
+
+            </div>
+            <div class="speed">
+                <label for="speed">the speed of the animation:</label>
+                <input type="range" id="speed" min="1" max="10" value="5">
+            </div>
+        </div>
+        <div class="array">
+            <div class="bars" id="bars"></div>
+        </div>
+    </div>
+    
+    <script src="sort.js"></script>
+
+</body>
+</html>
